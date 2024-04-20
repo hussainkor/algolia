@@ -1,6 +1,10 @@
 import { useState } from "react";
 import frontDocument from "../data/frontdocument";
 import frontendData from "../data/frontend-data";
+import javascript from "../assets/framework/js.png";
+import react from "../assets/framework/react.png";
+import vue from "../assets/framework/vue.png";
+import angular from "../assets/framework/angular.png";
 import {
   FaChevronUp,
   FaChevronDown,
@@ -53,18 +57,10 @@ function FrontWorks() {
         ))}
       </ul>
       <div className="data-details">
-        {getData === 1 && (
-          <img src="https://miro.medium.com/v2/resize:fit:770/1*WShtVM-qEorxn97wdTKyMA.png" />
-        )}
-        {getData === 2 && (
-          <img src="https://simpat.tech/wp-content/uploads/2021/08/reactjs-example.jpg" />
-        )}
-        {getData === 3 && (
-          <img src="https://miro.medium.com/v2/resize:fit:1040/1*tJzVwO-BXbPBnTYopXz2wQ.png" />
-        )}
-        {getData === 4 && (
-          <img src="https://www.c-sharpcorner.com/article/debugging-angular-11-application-in-visual-studio-code/Images/Debugging%20Angular%2011%20Application%20In%20Visual%20Studio%20Code06.gif" />
-        )}
+        {getData === 1 && <img src={javascript} />}
+        {getData === 2 && <img src={react} />}
+        {getData === 3 && <img src={vue} />}
+        {getData === 4 && <img src={angular} />}
       </div>
     </>
   );
